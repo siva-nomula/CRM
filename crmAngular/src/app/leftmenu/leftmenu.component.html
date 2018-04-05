@@ -1,0 +1,540 @@
+<div class="sidebar">
+  <!-- sidebar menu -->
+  <ul class="sidebar-menu">
+    <li class="active">
+      <a [routerLinkActive]="['active']" routerLink="/dashboard">
+        <i class="fa fa-tachometer"></i>
+        <span>Dashboard</span>
+        <span class="pull-right-container">
+        </span>
+      </a>
+    </li>
+    <li class="treeview">
+      <a [routerLinkActive]="['active']" routerLink="/#">
+        <i class="fa fa-users"></i>
+        <span>Customers</span>
+        <span class="pull-right-container">
+          <i class="fa fa-angle-left pull-right"></i>
+        </span>
+      </a>
+      <ul class="treeview-menu">
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/add-customer">Add Customer</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/clist">List</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/group">Groups</a>
+        </li>
+      </ul>
+    </li>
+    <li class="treeview">
+      <a [routerLinkActive]="['active']" routerLink="/#">
+        <i class="fa fa-shopping-basket"></i>
+        <span>Transaction</span>
+        <span class="pull-right-container">
+          <i class="fa fa-angle-left pull-right"></i>
+        </span>
+      </a>
+      <ul class="treeview-menu">
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/deposit">New Deposit</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/expense">New Expense</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/transfer">Transfer</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/view-transaction">View transaction</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/balance-sheet">Balance Sheet</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/transfer-report">Transfer Report</a>
+        </li>
+      </ul>
+    </li>
+    <li class="treeview">
+      <a [routerLinkActive]="['active']" routerLink="/#">
+        <i class="fa fa-shopping-cart"></i>
+        <span>Sales</span>
+        <span class="pull-right-container">
+          <i class="fa fa-angle-left pull-right"></i>
+        </span>
+      </a>
+      <ul class="treeview-menu">
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/invoice">Invoices</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/ninvoices">New Invoices</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/recurring">Recurring invoices</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/nrecurring">New Recurring invoices</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/quote">quotes</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/nquote">New quote</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/payment">Payments</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/taxeport">Tax Rates</a>
+        </li>
+      </ul>
+    </li>
+    <li class="treeview">
+      <a [routerLinkActive]="['active']" routerLink="/#">
+        <i class="fa fa-book"></i>
+        <span>Task</span>
+        <span class="pull-right-container">
+          <i class="fa fa-angle-left pull-right"></i>
+        </span>
+      </a>
+      <ul class="treeview-menu">
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/rtask">Running Task</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/atask">Archive Task</a>
+        </li>
+      </ul>
+    </li>
+    <li class="treeview">
+      <a [routerLinkActive]="['active']" routerLink="/#">
+        <i class="fa fa-shopping-bag"></i>
+        <span>Accounting</span>
+        <span class="pull-right-container">
+          <i class="fa fa-angle-left pull-right"></i>
+        </span>
+      </a>
+      <ul class="treeview-menu">
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/cpayment">Client payment</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/emanage">Expense management</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/ecategory">Expense Category</a>
+        </li>
+      </ul>
+    </li>
+    <li class="treeview">
+      <a [routerLinkActive]="['active']" routerLink="/#">
+        <i class="fa fa-file-text"></i>
+        <span>Report</span>
+        <span class="pull-right-container">
+          <i class="fa fa-angle-left pull-right"></i>
+        </span>
+      </a>
+      <ul class="treeview-menu">
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/preport">Project Report</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/creport">Client Report</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/ereport">Expense Report</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/incomexp">Income expense comparesion</a>
+        </li>
+      </ul>
+    </li>
+    <li class="treeview">
+      <a [routerLinkActive]="['active']" routerLink="/#">
+        <i class="fa fa-bell"></i>
+        <span>Attendance</span>
+        <span class="pull-right-container">
+          <i class="fa fa-angle-left pull-right"></i>
+        </span>
+      </a>
+      <ul class="treeview-menu">
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/thistory">Time History</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/timechange">Time Change Request</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/atreport">Attendance Report</a>
+        </li>
+      </ul>
+    </li>
+    <li class="treeview">
+      <a [routerLinkActive]="['active']" routerLink="/#">
+        <i class="fa fa-edit"></i>
+        <span>Recruitment</span>
+        <span class="pull-right-container">
+          <i class="fa fa-angle-left pull-right"></i>
+        </span>
+      </a>
+      <ul class="treeview-menu">
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/jpost">Jobs Posted</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/japp">Jobs Application</a>
+        </li>
+      </ul>
+    </li>
+    <li class="treeview">
+      <a [routerLinkActive]="['active']" routerLink="/#">
+        <i class="fa fa-shopping-basket"></i>
+        <span>payroll</span>
+        <span class="pull-right-container">
+          <i class="fa fa-angle-left pull-right"></i>
+        </span>
+      </a>
+      <ul class="treeview-menu">
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/salary">Salary Template</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/hourly">Hourly</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/managesal">Manage salary</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/empsallist">Employee salary list</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/mpayment">Make payment</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/generatepay">Generate payslip</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/paysum">Payroll summary</a>
+        </li>
+      </ul>
+    </li>
+    <li class="treeview">
+      <a [routerLinkActive]="['active']" routerLink="/#">
+        <i class="fa fa-bitbucket-square"></i>
+        <span>Stock</span>
+        <span class="pull-right-container">
+          <i class="fa fa-angle-left pull-right"></i>
+        </span>
+      </a>
+      <ul class="treeview-menu">
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/stockcat">Stock category</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/manstock">Manage Stock</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/astock">Assign stock</a>
+        </li>
+      </ul>
+    </li>
+    <li class="treeview">
+      <a [routerLinkActive]="['active']" routerLink="/#">
+        <i class="fa fa-ticket"></i>
+        <span>Tickets</span>
+        <span class="pull-right-container">
+          <i class="fa fa-angle-left pull-right"></i>
+        </span>
+      </a>
+      <ul class="treeview-menu">
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/ticanswer">Answered</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/ticopen">Open</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/iprocess">Inprocess</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/close">CLosed</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/allticket">All Tickets</a>
+        </li>
+      </ul>
+    </li>
+    <li class="treeview">
+      <a [routerLinkActive]="['active']" routerLink="/#">
+        <i class="fa fa-list"></i>
+        <span>Utilities</span>
+        <span class="pull-right-container">
+          <i class="fa fa-angle-left pull-right"></i>
+        </span>
+      </a>
+      <ul class="treeview-menu">
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/ativitylog">Activity Log</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/emailmes">Email message log</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/systemsts">System status</a>
+        </li>
+      </ul>
+    </li>
+    <li class="treeview">
+      <a [routerLinkActive]="['active']" routerLink="/#">
+        <i class="fa fa-bar-chart"></i>
+        <span>Charts</span>
+        <span class="pull-right-container">
+          <i class="fa fa-angle-left pull-right"></i>
+        </span>
+      </a>
+      <ul class="treeview-menu">
+        <li class="">
+          <a [routerLinkActive]="['active']" routerLink="/charts_flot">Flot Chart</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/charts_Js">Chart js</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/charts_morris">Morris Charts</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/charts_sparkline">Sparkline Charts</a>
+        </li>
+      </ul>
+    </li>
+    <li class="treeview">
+      <a [routerLinkActive]="['active']" routerLink="/#">
+        <i class="fa fa-briefcase"></i>
+        <span>Icons</span>
+        <span class="pull-right-container">
+          <i class="fa fa-angle-left pull-right"></i>
+        </span>
+      </a>
+      <ul class="treeview-menu">
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/icons_bootstrap">Bootstrap Icons</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/icons_fontawesome">Fontawesome Icon</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/icons_flag">Flag Icons</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/icons_material">Material Icons</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/icons_weather">Weather Icons </a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/icons_line">Line Icons</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/icons_pe">Pe Icons</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/icon_socicon">Socicon Icons</a>
+        </li>
+      </ul>
+    </li>
+    <li class="treeview">
+      <a [routerLinkActive]="['active']" routerLink="/#">
+        <i class="fa fa-list"></i>
+        <span>Other page</span>
+        <span class="pull-right-container">
+          <i class="fa fa-angle-left pull-right"></i>
+        </span>
+      </a>
+      <ul class="treeview-menu">
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/login">Login</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/register">Register</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/profile">Profile</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/forget_password">Forget password</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/lockscreen">Lockscreen</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/404">404 Error</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/505">505 Error</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/blank">Blank Page</a>
+        </li>
+      </ul>
+    </li>
+    <li class="treeview">
+      <a [routerLinkActive]="['active']" routerLink="/#">
+        <i class="fa fa-bitbucket"></i>
+        <span>UI Elements</span>
+        <span class="pull-right-container">
+          <i class="fa fa-angle-left pull-right"></i>
+        </span>
+      </a>
+      <ul class="treeview-menu">
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/buttons">Buttons</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/tabs">Tabs</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/notification">Notification</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/tree-view">Tree View</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/progressbars">Progressber</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/list">List View</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/typography">Typography</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/panels">Panels</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/modals">Modals</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/icheck_toggle_pagination">iCheck, Toggle, Pagination</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/labels-badges-alerts">Labels, Badges, Alerts</a>
+        </li>
+      </ul>
+    </li>
+    <li class="treeview">
+      <a [routerLinkActive]="['active']" routerLink="/#">
+        <i class="fa fa-gear"></i>
+        <span>settings</span>
+        <span class="pull-right-container">
+          <i class="fa fa-angle-left pull-right"></i>
+        </span>
+      </a>
+      <ul class="treeview-menu">
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/gsetting">Genaral settings</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/stfsetting">Staff settings</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/emailsetting">Email settings</a>
+        </li>
+        <li>
+          <a [routerLinkActive]="['active']" routerLink="/paysetting">Payment</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a [routerLinkActive]="['active']" routerLink="/company">
+        <i class="fa fa-home"></i>
+        <span>Companies</span>
+        <span class="pull-right-container">
+        </span>
+      </a>
+    </li>
+    <li>
+      <a [routerLinkActive]="['active']" routerLink="/holiday">
+        <i class="fa fa-stop-circle"></i>
+        <span>Public Holiday</span>
+        <span class="pull-right-container">
+        </span>
+      </a>
+    </li>
+    <li>
+      <a [routerLinkActive]="['active']" routerLink="/user">
+        <i class="fa fa-user-circle"></i>
+        <span>User</span>
+        <span class="pull-right-container">
+        </span>
+      </a>
+    </li>
+    <li>
+      <a [routerLinkActive]="['active']" routerLink="/items">
+        <i class="fa fa-file-o"></i>
+        <span>Items</span>
+        <span class="pull-right-container">
+        </span>
+      </a>
+    </li>
+    <li>
+      <a [routerLinkActive]="['active']" routerLink="/department">
+        <i class="fa fa-tree"></i>
+        <span>Departments</span>
+        <span class="pull-right-container">
+        </span>
+      </a>
+    </li>
+    <li>
+      <a [routerLinkActive]="['active']" routerLink="/document">
+        <i class="fa fa-file-text"></i>
+        <span>Documents</span>
+        <span class="pull-right-container">
+        </span>
+      </a>
+    </li>
+    <li>
+      <a [routerLinkActive]="['active']" routerLink="/train">
+        <i class="fa fa-clock-o"></i>
+        <span>Training</span>
+        <span class="pull-right-container">
+        </span>
+      </a>
+    </li>
+    <li>
+      <a [routerLinkActive]="['active']" routerLink="/calender">
+        <i class="fa fa-calendar"></i>
+        <span>Calender</span>
+        <span class="pull-right-container">
+        </span>
+      </a>
+    </li>
+    <li>
+      <a [routerLinkActive]="['active']" routerLink="/notice">
+        <i class="fa fa-file-text"></i>
+        <span>Notice Board</span>
+        <span class="pull-right-container">
+        </span>
+      </a>
+    </li>
+    <li>
+      <a [routerLinkActive]="['active']" routerLink="/message">
+        <i class="fa fa-envelope-o"></i>
+        <span>Message</span>
+        <span class="pull-right-container">
+        </span>
+      </a>
+    </li>
+    <li>
+      <a [routerLinkActive]="['active']" routerLink="/note">
+        <i class="fa fa-comment"></i>
+        <span>Notes</span>
+        <span class="pull-right-container">
+        </span>
+      </a>
+    </li>
+  </ul>
+</div>
